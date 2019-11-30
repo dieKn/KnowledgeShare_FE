@@ -1,14 +1,33 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> | 
-      <router-link to="/test">Test</router-link>
-    </div>
-    <router-view/>
+	<header>
+		<div class="inner">
+			<div id="logo">
+				<router-link to="/top"><img src="https://menta.imgix.net/resource/img/logo.png?auto=compress,format" loading="lazy"></router-link>
+			</div>
+			<div class="right-nav">
+				<div class="search">
+					<form method="GET" action="https://menta.work/plan" accept-charset="UTF-8">
+						<div class="relative m-r2">
+							<input id="q" class="" placeholder="PHPなどスキル名で検索" name="q" type="text"><div class="absolute center-v right-1 gray2 header_search"><i class="fas fa-search"></i></div>
+						</div>
+					</form>
+				</div>
+				<div class="loginbtn"><a href="https://menta.work/login" class="btn">ログイン</a></div>
+				<div class="loginbtn"><a href="/register" class="btn hanten free_submit">無料登録</a></div>
+			</div>
+		</div><!-- inner -->
+	</header>
+	<router-view/>
   </div>
 </template>
+<script>
+import 'normalize.css'
 
+export default {
+  name: 'App'
+}
+</script>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -18,9 +37,6 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
 
 #nav a {
   font-weight: bold;
