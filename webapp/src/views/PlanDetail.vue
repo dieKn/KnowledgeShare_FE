@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="paln-detail">
     <h1>新しい可能性を見つけよう！！</h1>
 	<div id="container">
 		<div class="side-bar">

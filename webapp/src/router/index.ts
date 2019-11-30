@@ -28,6 +28,11 @@ const routes = [
     name: 'top',
     component: () => import('../views/Top.vue')
    },
+   {
+    path: '/plan-detail',
+    name: 'plan-detail',
+    component: () => import('../views/PlanDetail.vue')
+   },
 ]
 
 const router = new VueRouter({
