@@ -33,6 +33,11 @@ const routes = [
     name: 'plan-detail',
     component: () => import('../views/PlanDetail.vue')
    },
+   {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/Login.vue')
+   },
 ]
 
 const router = new VueRouter({

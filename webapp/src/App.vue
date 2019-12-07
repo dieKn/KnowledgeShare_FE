@@ -13,7 +13,7 @@
 						</div>
 					</form>
 				</div>
-				<div class="loginbtn"><a href="https://menta.work/login" class="btn">ログイン</a></div>
+				<div class="loginbtn"><a href="./login" class="btn">ログイン</a></div>
 				<div class="loginbtn"><a href="/register" class="btn hanten free_submit">無料登録</a></div>
 			</div>
 		</div><!-- inner -->
