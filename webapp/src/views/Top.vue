@@ -14,7 +14,7 @@
 							<div class="list-logo"><img src="https://traskmatching.com/wp-content/uploads/2019/03/人物の無料素材.png"></div>
 							<div class="list-content">
 								<div class="username">忠宗</div>
-								<div class="plan-title"><a href="./plan-detail">ハイオク詰めまくりす</a></div>
+								<div class="plan-title"><a href="./plan-detail/123">ハイオク詰めまくりす</a></div>
 							</div>
 							<div class="list-btn"></div>
 						</div>

@@ -29,7 +29,7 @@ const routes = [
     component: () => import('../views/Top.vue')
    },
    {
-    path: '/plan-detail',
+    path: '/plan-detail/:planId',
     name: 'plan-detail',
     component: () => import('../views/PlanDetail.vue')
    },
