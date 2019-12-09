@@ -1,63 +1,31 @@
 <template>
-  <div class="about">
-    <h1>新しい可能性を見つけよう！！</h1>
-	<div id="container">
-		<div class="side-bar">
-		</div> <!-- side-bar-->
-		<div id="main">
-			<div id="main-header">
-			</div>
-			<div id="main-body">
-				<ul>
-					<li>
-						<div class="kn-list">
-							<div class="list-logo"><img src="https://traskmatching.com/wp-content/uploads/2019/03/人物の無料素材.png"></div>
-							<div class="list-content">
-								<div class="username">忠宗</div>
-								<div class="plan-title"><a href="./plan-detail/123">ハイオク詰めまくりす</a></div>
-							</div>
-							<div class="list-btn"></div>
-						</div>
-					</li>
-					<li>
-						<div class="kn-list">
-							<div class="list-logo"><img src="https://traskmatching.com/wp-content/uploads/2019/03/人物の無料素材.png"></div>
-							<div class="list-content">
-								<div class="username">小川</div>
-								<div class="plan-title"><a href="">欠陥住宅紹介します</a></div>
-							</div>
-							<div class="list-btn"></div>
-						</div>
-					</li>
-					<li>
-						<div class="kn-list">
-							<div class="list-logo"><img src="https://traskmatching.com/wp-content/uploads/2019/03/人物の無料素材.png"></div>
-							<div class="list-content">
-								<div class="username">アキラ</div>
-								<div class="plan-title"><a href="">500円でベンチ温めます！！</a></div>
-							</div>
-							<div class="list-btn"></div>
-						</div>
-					</li>
-					<li>
-						<div class="kn-list">
-							<div class="list-logo"><img src="https://traskmatching.com/wp-content/uploads/2019/03/人物の無料素材.png"></div>
-							<div class="list-content">
-								<div class="username">よっけ</div>
-								<div class="plan-title"><a href="">年中無休でシャカリキ頑張ります！！</a></div>
-							</div>
-							<div class="list-btn"></div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div> <!--main-->
-	</div> <!--container-->
-  </div>
+	<div id="top">
+		<h1>新しい可能性を見つけよう！！</h1>
+		<div id="container">
+			<div class="side-bar">
+			</div> <!-- side-bar-->
+			<PlanList></PlanList>
+		</div> <!--container-->
+	</div>
 </template>
-
+<script lang="ts">
+	import { Component, Vue } from 'vue-property-decorator';
+	import PlanList from "@/components/PlanList.vue";
+//	export default {
+//		name: 'top',
+//		components: {
+//			PlanList
+//		}
+//	}
+	@Component({
+		components: {
+			PlanList,
+		},
+	})
+	export default class Top extends Vue {}
+</script>
 <style>
-div.about{
+div#top{
 	background: #f4f8fa;
 }
 div#container{

@@ -1,3 +1,9 @@
 {
-  "extends": "eslint:recommended"
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "parser": "typescript-eslint/parser",
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  }
 }
