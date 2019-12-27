@@ -34,9 +34,19 @@ const routes = [
     component: () => import('../views/PlanDetail.vue')
    },
    {
+    path: '/plan-create/',
+    name: 'plan-create',
+    component: () => import('../views/PlanCreate.vue')
+   },
+   {
     path: '/login',
     name: 'login',
     component: () => import('../views/Login.vue')
+   },
+   {
+    path: '/requestAccept',
+    name: 'requestAccept',
+    component: () => import('../views/RequestAccept.vue')
    },
 ]
 
