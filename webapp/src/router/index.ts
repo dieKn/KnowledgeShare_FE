@@ -48,6 +48,21 @@ const routes = [
     name: 'requestAccept',
     component: () => import('../views/RequestAccept.vue')
    },
+   {
+    path: '/mypage',
+    name: 'mypage',
+    component: () => import('../views/MyPage.vue')
+   },
+   {
+    path: '/chat',
+    name: 'chat',
+    component: () => import('../views/Chat.vue')
+   },
+   {
+    path: '/register',
+    name: 'register',
+    component: () => import('../views/Register.vue')
+   },
 ]
 
 const router = new VueRouter({
